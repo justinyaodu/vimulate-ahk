@@ -10,9 +10,9 @@ An [AutoHotKey](https://www.autohotkey.com/) script which emulates Vim keybindin
 * **Unobtrusive status window** which displays the current mode
 * **Easy to toggle on and off** (so it doesn't get in the way when you're actually using Vim, for example)
 
-## Keybinding Support
+## License
 
-### Overview
+## Keybinding Support
 
 | Status                                  | Keys                   |
 | ----------------------------------------| ---------------------- |
@@ -38,4 +38,5 @@ An [AutoHotKey](https://www.autohotkey.com/) script which emulates Vim keybindin
     * Page up/down (<kbd>H</kbd><kbd>L</kbd>) and indent adjustment (<kbd>\<</kbd><kbd>></kbd>) commands don't work if pressed multiple times while Shift is held down
 * Instead of being used for marking, <kbd>m</kbd> becomes a [menu key](https://en.wikipedia.org/wiki/Menu_key)
 * Although supported, mappings for <kbd>Backspace</kbd>, <kbd>Space</kbd>, and <kbd>Enter</kbd> are disabled by default for improved functionality in web browsers and other applications
-*Will be fixed in future versions.
+
+_*Will be fixed in future versions._
