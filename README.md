@@ -12,6 +12,8 @@ An [AutoHotKey](https://www.autohotkey.com/) script which emulates Vim keybindin
 
 ## License
 
+Vimulate AHK is licensed under the [MIT License](LICENSE.md).
+
 ## Keybinding Support
 
 | Status                                  | Keys                   |
