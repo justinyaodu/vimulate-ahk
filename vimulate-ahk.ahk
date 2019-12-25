@@ -26,7 +26,68 @@ SendMode Input
 
 ;;;;;;;; define constants ;;;;;;;;
 
-VIMULATE_AHK_VERSION := 0.1
+VIMULATE_NAME      := "Vimulate AHK"
+VIMULATE_VERSION   := 0.1
+VIMULATE_TITLE     := VIMULATE_NAME " v" VIMULATE_VERSION
+VIMULATE_COPYRIGHT := "Copyright Justin Yao Du 2019"
+
+HELP_TEXT =
+(
+%VIMULATE_TITLE%
+%VIMULATE_COPYRIGHT%
+Licensed under the <a href="https://github.com/justinyaodu/vimulate-ahk/blob/master/LICENSE.txt">MIT License</a>
+
+Turn %VIMULATE_NAME% on and off: Win+Shift+Esc
+Insertion:
+        a: insert after cursor position
+        A: insert at end of line
+        i: insert at cursor position
+        I: insert at beginning of line
+        o: insert on new line after
+        O: insert on new line before
+Mode switching:
+        Esc for command mode
+        v for visual
+        V for line visual
+Movement:
+        hjkl or arrow keys: movement
+        b: previous word
+        n: next word
+        |^0: beginning of line
+        $: end of line
+        -: previous line
+        +: next line
+        H: page up
+        L: page down
+        g: go to top
+        G: go to bottom
+Deletion (copies deleted text to clipboard):
+        x: deletes next character
+        X: deletes previous character
+        d: deletes selection
+        D: deletes to end of line
+        s: deletes next character, enters insert mode
+        S: deletes current line, enters insert mode
+        c: deletes selection, enters insert mode
+        C: deletes to end of line, enters insert mode
+Copy/paste:
+        y: copies selection
+        Y: copies to end of line
+        p: pastes clipboard contents
+Miscellaneous:
+        J: join lines
+        <: decrease indent
+        >: increase indent
+        /: find
+        n: find next occurrence
+        u: undo
+        m: menu key
+
+Visit the <a href="https://github.com/justinyaodu/vimulate-ahk">GitHub repository</a> to get more information, give feedback,
+and check for an updated version of the software.
+
+Thanks for using %VIMULATE_NAME% :)
+)
 
 MODE_INSERT      := "INSERT"
 MODE_COMMAND     := "COMMAND"
@@ -41,10 +102,12 @@ MODE_DISABLED    := "DISABLED"
 _windowPosX := A_ScreenWidth - 225
 _windowPosY := A_ScreenHeight - 100
 
-Gui, Add, ComboBox, Left w90 VmodeCombo GSetModeFromCombo, % MODE_INSERT . "|" . MODE_COMMAND . "|" . MODE_VISUAL . "|" . MODE_VISUAL_LINE "|" . MODE_DISABLED
-Gui, Add, Text, Right r1 w60 y0 VcmdBufferText,
+Gui, Margin, 0, 0
+Gui, Add, Button, y0 GShowHelpWindow, ?
+Gui, Add, ComboBox, y0 w90 Left VmodeCombo GSetModeFromCombo, % MODE_INSERT "|" MODE_COMMAND "|" MODE_VISUAL "|" MODE_VISUAL_LINE "|" MODE_DISABLED
+Gui, Add, Text, Right y0 w60 r1 VcmdBufferText,
 Gui, -MinimizeBox -MaximizeBox
-Gui, Show, x%_windowPosX% y%_windowPosY%, % "Vimulate AHK v" . VIMULATE_AHK_VERSION
+Gui, Show, x%_windowPosX% y%_windowPosY%, % VIMULATE_TITLE
 
 SetMode(MODE_COMMAND)
 
@@ -96,6 +159,18 @@ SetMode(newMode)
 		Gui, +AlwaysOnTop
 	}
 }
+
+;;;;;;;; help window construction and event handling ;;;;;;;;
+
+ShowHelpWindow:
+	Gui, Help:Add, Link,, % HELP_TEXT
+	Gui, Help:Show, w350, % "About " VIMULATE_TITLE
+return
+
+HelpGuiEscape:
+HelpGuiClose:
+	Gui, Hide
+return
 
 ;;;;;;;; define action functions ;;;;;;;;
 

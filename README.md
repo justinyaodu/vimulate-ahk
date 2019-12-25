@@ -1,14 +1,14 @@
 # Vimulate AHK
 
-An [AutoHotKey](https://www.autohotkey.com/) script which **emulates Vim keybindings in any application**. Want to use <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> in your word processor? Want a visual mode for editing spreadsheets? The possibilities are endless!
+An [AutoHotKey](https://www.autohotkey.com/) script which **emulates Vim keybindings in any Windows application**. Want to use <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> in your word processor? Want a visual mode for editing spreadsheets? The possibilities are endless!
 
 ## Features
 
-* **Fully modal**: switch between command, insert, and visual modes with the customary keyboard shortcuts
-* **Extensive keybinding support**: supports as many keys as possible
-* **Extensive application support**: achieved by translating Vim keybindings to widely used keyboard commands (for example, <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> becomes <kbd>←</kbd><kbd>↓</kbd><kbd>↑</kbd><kbd>→</kbd>)
-* **Unobtrusive status window** which displays the current mode
-* **Easy to toggle on and off** (so it doesn't get in the way when you're actually using Vim)
+* **Fully modal**: _switch between command, insert, and visual modes with the customary keyboard shortcuts_
+* **Extensive keybinding support**: _supports as many Vim keybindings as possible_
+* **Extensive application support**: _translates Vim keybindings to widely used keyboard commands (<kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> becomes <kbd>←</kbd><kbd>↓</kbd><kbd>↑</kbd><kbd>→</kbd>, etc.)_
+* **Unobtrusive status window** _which displays the current mode_
+* **Easy to toggle on and off** _so it doesn't get in the way when you're actually using Vim_
 
 ## License
 
@@ -42,3 +42,4 @@ Vimulate AHK is licensed under the [MIT License](LICENSE.md).
 * Although supported, mappings for <kbd>Backspace</kbd>, <kbd>Space</kbd>, and <kbd>Enter</kbd> are disabled by default for improved functionality in web browsers and other applications
 
 _*Will be fixed in future versions._
+
