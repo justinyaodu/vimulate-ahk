@@ -16,14 +16,14 @@ Vimulate AHK is licensed under the [MIT License](LICENSE.md).
 
 ## Keybinding Support
 
-| Status                                  | Keys                   |
-| ----------------------------------------| ---------------------- |
-| Supported, maybe with minor differences | hjkl ←↓↑→ bw \|^0$ -+ G aAiIoO xX D sS C Y v |
-| Supported with noticeable differences   | g p V                  |
-| Implemented with external functionality | / n u                  |
-| Partial support                         | d c y J HL <>          |
-| Used for other functionality            | m                      |
-| Supported, but disabled by default      | (Bksp) (Space) (Enter) |
+| Status                                  | Keys            |
+| ----------------------------------------| --------------- |
+| Supported, maybe with minor differences | `hjkl ←↓↑→ bw \|^0$ -+ G aAiIoO xX D sS C Y v` |
+| Supported with noticeable differences   | `g p V`         |
+| Implemented with external functionality | `/ n u`         |
+| Partial support                         | `d c y J HL <>` |
+| Used for other functionality            | `m`             |
+| Supported, but disabled by default      | <kbd>Backspace</kbd> <kbd>Space</kbd> <kbd>Enter</kbd> |
 
 ### Quirks, Limitations, and Extra Features
 
