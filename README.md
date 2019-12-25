@@ -1,14 +1,14 @@
 # Vimulate AHK
 
-An [AutoHotKey](https://www.autohotkey.com/) script which emulates Vim keybindings in *any* application. Want to use hjkl in your word processor? Want a visual mode for editing spreadsheets? The possibilities are endless.
+An [AutoHotKey](https://www.autohotkey.com/) script which **emulates Vim keybindings in any application**. Want to use <key>h</key><key>j</key><key>k</key><key>l</key> in your word processor? Want a visual mode for editing spreadsheets? The possibilities are endless!
 
 ## Features
 
 * **Fully modal**: switch between command, insert, and visual modes with the customary keyboard shortcuts
 * **Extensive keybinding support**: supports as many keys as possible
-* **Extensive application support**: achieved by translating Vim keybindings to widely used keyboard commands (for example, the hjkl keys become arrow keys)
+* **Extensive application support**: achieved by translating Vim keybindings to widely used keyboard commands (for example, <key>h</key><key>j</key><key>k</key><key>l</key> becomes <key>←</key><key>↓</key><key>↑</key><key>→</key>)
 * **Unobtrusive status window** which displays the current mode
-* **Easy to toggle on and off** (so it doesn't get in the way when you're actually using Vim, for example)
+* **Easy to toggle on and off** (so it doesn't get in the way when you're actually using Vim)
 
 ## License
 
