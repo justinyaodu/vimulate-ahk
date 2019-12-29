@@ -61,27 +61,26 @@ Movement:
         L: page down
         g: go to top
         G: go to bottom
-Deletion (copies deleted text to clipboard):
-        x: deletes next character
-        X: deletes previous character
-        d: deletes selection
-        D: deletes to end of line
-        s: deletes next character, enters insert mode
-        S: deletes current line, enters insert mode
-        c: deletes selection, enters insert mode
-        C: deletes to end of line, enters insert mode
-Copy/paste:
+Cut/copy/paste:
+        x: cuts next character
+        X: cuts previous character
+        d: cuts selection
+        D: cuts to end of line
+        s: cuts next character, enters insert mode
+        S: cuts current line, enters insert mode
+        c: cuts selection, enters insert mode
+        C: cuts to end of line, enters insert mode
         y: copies selection
         Y: copies to end of line
         p: pastes clipboard contents
 Miscellaneous:
-        J: join lines
-        <: decrease indent
-        >: increase indent
         /: find
         n: find next occurrence
         u: undo
         m: menu key
+        J: join lines
+        <: decrease indent
+        >: increase indent
 
 Visit the <a href="https://github.com/justinyaodu/vimulate-ahk">GitHub repository</a> to get more information, give feedback,
 and check for an updated version of the software.
