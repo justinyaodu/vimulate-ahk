@@ -1,6 +1,6 @@
 # Vimulate AHK
 
-An [AutoHotKey](https://www.autohotkey.com/) script which **emulates Vim keybindings in any Windows application**. Want to use <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> in your word processor? Want a visual mode for editing spreadsheets? The possibilities are endless!
+An [AutoHotkey](https://www.autohotkey.com/) script which **emulates Vim keybindings in any Windows application**. Want to use <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> in your word processor? Want a visual mode for editing spreadsheets? The possibilities are endless!
 
 ## Features
 
