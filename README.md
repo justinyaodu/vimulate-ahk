@@ -4,12 +4,12 @@ An [AutoHotkey](https://www.autohotkey.com/) script which **emulates Vim keybind
 
 ## Features
 
-* **Fully modal:** _switch between command, insert, and visual modes with the customary keyboard shortcuts_
+* **Fully modal:** switch between command, insert, and visual modes with the customary keyboard shortcuts
 * **Extensive keybinding support**
-* **Extensive application support** _achieved by translating Vim keybindings to existing keyboard commands (<kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> becomes <kbd>←</kbd><kbd>↓</kbd><kbd>↑</kbd><kbd>→</kbd>, etc.)_
-* **Counts, compound commands, multi-letter commands**: _commands like `7x`, `d3w`, and `gg` are fully supported_
-* **Unobtrusive status window** _which displays the mode and partially entered commands_
-* **Easy to toggle on and off** _so it doesn't get in the way when you're actually using Vim_
+* **Extensive application support** achieved by translating Vim keybindings to existing keyboard commands (<kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> becomes <kbd>←</kbd><kbd>↓</kbd><kbd>↑</kbd><kbd>→</kbd>, etc.)
+* **Counts, compound commands, multi-letter commands**: commands like `7x`, `d3w`, and `gg` are fully supported
+* **Unobtrusive status window** which displays the mode and partially entered commands
+* **Easy to toggle on and off** so it doesn't get in the way when you're actually using Vim
 * **Easily extensible:** add new modes for application-specific functionality or exotic things like mouse control
 
 ## License
